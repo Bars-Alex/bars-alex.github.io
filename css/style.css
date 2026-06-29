@@ -1,0 +1,67 @@
+body{
+
+    margin:0;
+    font-family:Segoe UI,Arial,sans-serif;
+
+    background:#181818;
+    color:white;
+
+}
+
+header{
+
+    background:#202020;
+
+    padding:20px;
+
+}
+
+nav{
+
+    margin-top:10px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-right:20px;
+
+}
+
+nav a:hover{
+
+    color:#4aa3ff;
+
+}
+
+main{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:40px;
+
+}
+
+.hero{
+
+    text-align:center;
+
+}
+
+footer{
+
+    margin-top:60px;
+
+    padding:20px;
+
+    background:#202020;
+
+    text-align:center;
+
+}
