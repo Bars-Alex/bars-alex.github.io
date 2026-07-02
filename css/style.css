@@ -53,6 +53,12 @@ main{
 
 }
 
+p,h1 {
+	
+	padding-left: 40px; /* Текст внутри абзаца отодвинут на 40 пикселей влево */
+
+}
+
 .hero{
 
     text-align:center;
