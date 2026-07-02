@@ -12,8 +12,13 @@ header{
 
     background:#202020;
 
-    padding:20px;
+    padding:0px;
 
+}
+
+top-nav-bar{
+	background:#202020;
+	
 }
 
 nav{
@@ -58,11 +63,11 @@ footer{
 
     margin-top:60px;
 
-    padding:20px;
+    padding:0px;
 
     background:#202020;
 
-    text-align:center;
+    text-align:left;
 
 }
 
