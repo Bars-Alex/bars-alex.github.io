@@ -111,6 +111,38 @@
         ></path>
       </symbol>
     </svg>
+	<script>
+      (function() {
+        function getSystemColorMode() {
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	    }
+        function getQueryStringTheme() {
+          try {
+            return new URLSearchParams(window.location.search).get('docusaurus-theme')
+          } catch (e) {}
+        }
+        function getStoredTheme() {
+          try {
+            return window['localStorage'].getItem('theme-9f6');
+          } catch (err) {}
+        }
+        var initialTheme = getQueryStringTheme() || getStoredTheme();
+        document.documentElement.setAttribute('data-theme', initialTheme || getSystemColorMode());
+        document.documentElement.setAttribute('data-theme-choice', initialTheme || 'system');
+      })();
+
+      (function() {
+        try {
+          const entries = new URLSearchParams(window.location.search).entries();
+          for (var [searchKey, value] of entries) {
+            if (searchKey.startsWith('docusaurus-data-')) {
+              var key = searchKey.replace('docusaurus-data-',"data-")
+              document.documentElement.setAttribute(key, value);
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
 	<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button
         class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
@@ -186,8 +218,8 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-		    <div class="navbar__logo">
-		      <img src="/images/Bars.svg" alt="Bars Logo"
+		    <div class="navbar_logo">
+		      <img src="/images/logo.svg" alt="Bars Logo"
 			  class="themedComponent_bBvr themedComponent--dark_EnpU">
 			</div>
 			<b class="navbar__title text--truncate"></b>
