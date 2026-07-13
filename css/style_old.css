@@ -1,0 +1,90 @@
+body{
+	
+    margin:0;
+    font-family:Segoe UI,Arial,sans-serif;
+
+    background:#181818;
+    color:white;
+
+}
+
+header{
+
+    background:#202020;
+
+    padding:0px;
+
+}
+
+top-nav-bar{
+	background:#202020;
+	
+}
+
+nav{
+
+    margin-top:10px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-right:20px;
+
+}
+
+nav a:hover{
+
+    color:#4aa3ff;
+
+}
+
+main{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:0px;
+
+}
+
+p,h1 {
+	
+	padding-left: 40px; /* Текст внутри абзаца отодвинут на 40 пикселей влево */
+
+}
+
+.hero{
+
+    text-align:center;
+
+}
+
+footer{
+
+    margin-top:60px;
+
+    padding:0px;
+
+    background:#202020;
+
+    text-align:left;
+
+}
+
+.custom-element {
+ padding: 30px;
+ height: 200px;
+ border: 1px none #e2e8f0;
+ box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+ background-color: rgba(74, 74, 74, 1);
+ color: #d4d4d4;
+ font-size: 18px;
+ font-weight: 400;
+ text-align: left;
+}
