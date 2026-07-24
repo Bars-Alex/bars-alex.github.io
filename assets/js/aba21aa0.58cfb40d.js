@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbars_alex_github_io=self.webpackChunkbars_alex_github_io||[]).push([["3747"],{7093(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
